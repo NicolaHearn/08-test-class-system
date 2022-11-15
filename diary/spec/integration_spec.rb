@@ -34,11 +34,11 @@ describe 'integration' do
         diary = Diary.new
         entry_1 = DiaryEntry.new("Monday", "one two three four five six seven eight nine ten")
         entry_2 = DiaryEntry.new("Wednesday", "one two")
-        entry_3 = DiaryEntry.new("Tuesday", "one two three four five six")
+        entry_3 = DiaryEntry.new("Tuesday", "one two three four five six seven")
         diary.add(entry_1)
         diary.add(entry_2)
         diary.add(entry_3)
-        expect(diary.find_best_entry_for_reading_time(2, 3)).to eq entry_3.title
+        expect(diary.find_best_entry_for_reading_time(2, 3)).to eq entry_2.title
       end
     end
   end
