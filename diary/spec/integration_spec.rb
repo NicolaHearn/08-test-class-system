@@ -33,12 +33,12 @@ describe 'integration' do
       it "calculates the length of text that is readable and returns the diary entry that is the closest match, or the first one in the list if there are two of the same length" do
         diary = Diary.new
         entry_1 = DiaryEntry.new("Monday", "one two three four five six seven eight nine ten")
-        entry_3 = DiaryEntry.new("Wednesday", "one two")
-        entry_2 = DiaryEntry.new("Tuesday", "one two three four five six")
+        entry_2 = DiaryEntry.new("Wednesday", "one two")
+        entry_3 = DiaryEntry.new("Tuesday", "one two three four five six")
         diary.add(entry_1)
         diary.add(entry_2)
         diary.add(entry_3)
-        expect(diary.find_best_entry_for_reading_time(2, 3)).to eq entry_2.title
+        expect(diary.find_best_entry_for_reading_time(2, 3)).to eq entry_3.title
       end
     end
   end

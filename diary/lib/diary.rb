@@ -1,4 +1,4 @@
-require './diary_entry.rb'?
+# require './diary_entry.rb'
 class Diary
     def initialize
       @entries = []
@@ -55,12 +55,12 @@ class Diary
     end
 end
 
-diary = Diary.new
-entry_1 = DiaryEntry.new("Monday", "one two three four five six seven eight nine ten")
-entry_1a = DiaryEntry.new("Thursday", "one, two, three, four")
-entry_2 = DiaryEntry.new("Tuesday", "one two three four five six")
-entry_3 = DiaryEntry.new("Wednesday", "one two")
-diary.add(entry_1)
-diary.add(entry_2)
-diary.add(entry_3)
-diary.find_best_entry_for_reading_time(2, 3)
+# diary = Diary.new
+# entry_1 = DiaryEntry.new("Monday", "one two three four five six seven eight nine ten")
+# entry_1a = DiaryEntry.new("Thursday", "one, two, three, four")
+# entry_2 = DiaryEntry.new("Tuesday", "one two three four five six")
+# entry_3 = DiaryEntry.new("Wednesday", "one two")
+# diary.add(entry_1)
+# diary.add(entry_2)
+# diary.add(entry_3)
+# diary.find_best_entry_for_reading_time(2, 3)
